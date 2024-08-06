@@ -1,0 +1,49 @@
+.card1-card {
+  flex: 0 0 auto;
+  width: 32%;
+  display: flex;
+  padding: 20px;
+  max-width: 450px;
+  min-height: 480px;
+  align-items: center;
+  border-radius: 36px;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: flex-end;
+  background-image: url("public/external/blog1-1500w.jpeg");
+}
+.card1-info {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  background-color: var(--dl-color-scheme-white);
+}
+.card1-text {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Urbanist;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.card1-root-class-name {
+  background-image: url("public/external/blog2-200h.jpeg");
+}
+.card1-root-class-name1 {
+  background-image: url("public/external/blog4-200h.jpeg");
+}
+.card1-root-class-name2 {
+  background-image: url("public/external/blog1-200h.jpeg");
+}
+@media(max-width: 767px) {
+  .card1-card {
+    width: 100%;
+  }
+}
