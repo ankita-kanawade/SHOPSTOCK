@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Users List</title>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/user.css')}}" />
+</head>
+<body>
+<main>
+    <header>
+    <h2>Registered Users</h2>
+  </header>
+  <div class="form_wrapper">
+   <table>
+     <tr>
+       <th>Username</th>
+       <th>Email Address</th>
+<!--       <th>Password</th>-->
+     </tr>
+     {% for user in users %}
+       <tr>
+           <td>{{user.name}}</td>
+           <td>{{user.email}}</td>
+<!--           <td>{{user.pwd}}</td>-->
+      </tr>
+       {% endfor %}
+   </table>
+   </div>
+</main>
+</body>
+</html>

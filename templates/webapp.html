@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Detection Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .image-container img {
+            max-width: 400px;
+            max-height: 400px;
+            margin-bottom: 20px;
+        }
+        .count-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Object Detection Results</h1>
+
+    <div class="image-container">
+        <div class="detected-image">
+            <h2>Detected Image</h2>
+<!--            <img src="{{ detected_image }}" alt="Detected Image">-->
+            <img src="{{ url_for('video') }}"   alt="Upload video">
+        </div>
+    </div>
+
+    <div class="count-container">
+        <h2>Object Count</h2>
+        <ul>
+            <li>Ariel: {{ count_result['Ariel'] }}</li>
+            <li>Coca Cola: {{ count_result['Coca Cola'] }}</li>
+            <li>Colgate: {{ count_result['Colgate'] }}</li>
+            <li>Fanta: {{ count_result['Fanta'] }}</li>
+            <li>Kurkure: {{ count_result['Kurkure'] }}</li>
+            <li>Lays Masala: {{ count_result['Lays Masala'] }}</li>
+            <li>Lays Mexican: {{ count_result['Lays Mexican'] }}</li>
+            <li>Lifebuoy Soap: {{ count_result['Lifebuoy Soap'] }}</li>
+            <li>Sunsilk Shampoo: {{ count_result['Sunsilk Shampoo'] }}</li>
+            <li>Vaseline Lotion: {{ count_result['Vaseline Lotion'] }}</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+
+
